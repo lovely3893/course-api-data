@@ -23,6 +23,11 @@ public class CourseController {
 	public String test() {
 		return "test";
 	}
+	
+	@GetMapping("/go")
+	public String test1() {
+		return "Hello Abhi";
+	}
 
 	@RequestMapping("/topics/{id}/courses")
 	public List<Course> getAllCourse(@PathVariable String id) {
